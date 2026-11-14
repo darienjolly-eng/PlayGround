@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+<meta name="theme-color" content="#1a1310" />
+<title>CUP CLASH — A Boss Rush in Five Acts</title>
+<link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+<div id="app">
+  <div id="stage" class="stage">
+    <canvas id="game" width="1280" height="720" aria-label="Cup Clash game canvas"></canvas>
+
+    <div id="titleUI" class="title-ui">
+      <button id="startBtn" class="start-btn" aria-label="Start">START</button>
+      <div class="title-hint">Enter / Tap · Best played in landscape</div>
+    </div>
+
+    <div id="touch" class="touch hidden" aria-hidden="true">
+      <div class="pad" id="pad">
+        <div class="pad-ring"></div>
+        <div class="pad-knob" id="padKnob"></div>
+      </div>
+      <div class="right-btns">
+        <button class="tbtn tbtn-sm" id="tWeapon" aria-label="Switch weapon"><span>SWAP</span><em id="tWeaponName">PEA</em></button>
+        <button class="tbtn tbtn-super" id="tSuper" aria-label="Super"><span>SUPER</span><em id="tSuperCount">0</em></button>
+        <button class="tbtn" id="tDash" aria-label="Dash"><span>DASH</span></button>
+        <button class="tbtn tbtn-jump" id="tJump" aria-label="Jump"><span>JUMP</span></button>
+        <button class="tbtn tbtn-fire" id="tFire" aria-label="Shoot"><span>FIRE</span></button>
+      </div>
+    </div>
+    <div id="pauseBtn" class="pause-btn hidden" aria-label="Pause">II</div>
+  </div>
+</div>
+
+<script type="module" src="./js/main.js"></script>
+</body>
+</html>
